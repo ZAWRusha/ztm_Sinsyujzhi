@@ -695,10 +695,10 @@ nav li:hover > .submenu {
 	font-family: "HelveticaNeueCyr";
 	font-size: 14px;
 	font-weight: 300;
-	line-height: 26px;
+	line-height: 14px;
 	letter-spacing: 0.84px;
 	color: #fff;
-	padding: 3px 5px;
+	padding: 5px 5px;
 	margin: 0 -380px;
 }
 
