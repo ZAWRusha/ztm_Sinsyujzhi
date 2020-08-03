@@ -858,6 +858,7 @@ nav li:hover > .submenu {
 .footer {
 	margin-top: 50px;
 	border-top: 4px solid var(--secondary);
+	background: #fff;
 }
 .footer-blocks {
 	display: flex;
