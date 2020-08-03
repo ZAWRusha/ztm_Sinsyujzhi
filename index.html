@@ -446,19 +446,25 @@
 	<!-- modal call -->
 	<div class="modal-bg"></div>
 	<div class="modal-call">
-		<a href="" class="modal-close"></a>
+		<a href="#" class="modal-close"></a>
 		<div class="modal-content">
-			<div class="modal-title modal-title__call">Заказать звонок</div>
+			<div class="modal-title modal-title__call">Обратная связь</div>
 			<span class="modal-description">Заполните форму и наши специалисты свяжуться с Вами в ближайшее время.</span>
 			<div class="modal-inputs">
 				<input type="text" class="input modal-input" placeholder="Ваше имя">
 				<input type="tel" class="input modal-input" required placeholder="Номер телефона*" name="phone">
+				<input type="email" class="input modal-input" required placeholder="E-mail*">
+				<span class="modal-message">Сообщение</span>
+				<textarea type="text" class="textarea modal-textarea" placeholder=""></textarea>
 			</div>
+			<!-- checkbox -->
 			<div class="modal-check">
-				<input type="checkbox" checked> Даю согласие на <a href="">обработку персональных данных</a>
+				<input id="check1" type="checkbox" name="check" value="check1" checked required>
+				<label for="check1">Даю согласие на <a href="#">обработку персональных данных</a></label>
 			</div>
+			<!-- modal-button_box -->
 			<div class="modal-button_box">
-				<a href="" type="submit" class="button accent-button modal-button">Заказать звонок</a>
+				<a href="#" type="submit" class="button accent-button modal-button">Заказать звонок</a>
 			</div>
 		</div>
 	</div>

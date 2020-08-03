@@ -57,7 +57,8 @@ a {
 .img {
 	outline: none;
 }
-.input {
+.input,
+textarea {
 	width: 100%;
 	height: 42px;
 	font-family: "HelveticaNeueCyr-Roman";
@@ -70,13 +71,15 @@ a {
 	border: none;
 	outline: none;
 }
-.input::placeholder {
+.input::placeholder,
+textarea::placeholder {
 	font-weight: 300;
 	opacity: 0.8;
 	border: none;
 	transition: opacity 0.5s ease;
 }
-.input:focus::placeholder {
+.input:focus::placeholder,
+textarea:focus::placeholder {
 	opacity: 0;
 }
 div {
@@ -1348,10 +1351,19 @@ nav li:hover > .submenu {
 	font-weight: 700;
 	margin-bottom: 20px;
 }
+.modal-title__call {
+	text-align: center;
+	font-size: 30px;
+	color: #15151c;
+	padding: 0;
+	margin-top: 10px;
+}
 .modal-description {
 	font-family: "HelveticaNeueCyr";
 	font-size: 14px;
 	font-weight: 500;
+	color: #15151c;
+	word-break: break-all;
 }
 .modal-inputs {
 	display: flex;
@@ -1378,12 +1390,42 @@ nav li:hover > .submenu {
 	border: none;
 	transition: opacity 0.5s ease;
 }
+
+.modal-check input[type="checkbox"] {
+	display: none;
+}
 .modal-check {
 	font-family: "HelveticaNeueCyr";
 	font-size: 12px;
 	font-weight: 500;
 	color: var(--primary);
 	margin-bottom: 20px;
+}
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	margin-right: 0px;
+	font-size: 13px;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 0px;
+	bottom: 15px;
+}
+.modal-check label:before {
+	border-radius: 1px;
+}
+input[type="checkbox"]:checked + label:before {
+	content: "";
+	border: 1px solid #084f93;
+	background: url(../img/checkbox.jpg);
 }
 .modal-check a {
 	font-family: "HelveticaNeueCyr";
@@ -1394,6 +1436,28 @@ nav li:hover > .submenu {
 .modal-check a:hover {
 	color: var(--accent);
 }
+.modal-textarea {
+	display: block;
+	height: 50px;
+	width: 100%;
+	padding: 5px 5px;
+	margin-bottom: 10px;
+	line-height: 1;
+	border: 1px solid #888888;
+	border-width: 100%;
+	border-radius: 0;
+	background: #fff;
+	overflow: auto;
+	resize: none;
+}
+.modal-message {
+	/* font-family: "HelveticaNeueCyr-Roman"; */
+	color: #202020;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-top: 15px;
+}
 .modal-button_box {
 	text-align: center;
 	width: 100%;
@@ -1402,63 +1466,3 @@ nav li:hover > .submenu {
 .modal-button {
 	margin: 0;
 }
-
-/*************** modal call **************************/
-/* .modal-call {
-	display: none;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: 12;
-	background-color: rgba(0, 0, 0, 0.7);
-}
-.modal-box__call {
-	display: block;
-	background-color: #fff;
-	position: fixed;
-	width: 370px;
-	left: 50%;
-	top: 100px;
-	transform: translateX(-50%);
-	z-index: 15;
-	color: #15151c;
-}
-.modal-close__call {
-	background: url(../img/modal-close.svg) no-repeat;
-	height: 15px;
-	width: 74px;
-	position: absolute;
-	top: -23px;
-	right: -20px;
-}
-.modal-title__call {
-	font-size: 30px;
-	text-align: center;
-} */
-
-/*************** modal sended **************************/
-
-/* .modal-sended {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 12;
-	background-color: rgba(0, 0, 0, 0.7);
-} */
-/* .modal-sended__box {
-	background-color: #fff;
-	position: fixed;
-	width: 370px;
-	left: 50%;
-	top: 100px;
-	transform: translateX(-50%);
-	z-index: 15;
-	color: #15151c;
-} */
