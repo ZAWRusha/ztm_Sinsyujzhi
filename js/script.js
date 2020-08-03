@@ -1,3 +1,28 @@
+// topmenu fixed
+var h_hght = 162; // distance from the menu to the top of the screen (px)
+var h_mrg = 0;    // distance to fix the menu from the top of the screen (px)
+
+$(function () {
+
+	var elem = $('.nav'); // class of the topmenu
+	var top = $(this).scrollTop();
+
+	if (top > h_hght) {
+		elem.css('top', h_mrg);
+	}
+
+	$(window).scroll(function () {
+		top = $(this).scrollTop();
+
+		if (top + h_mrg < h_hght) {
+			elem.css('top', (h_hght - top));
+		} else {
+			elem.css('top', h_mrg);
+		}
+	});
+});
+
+
 // slider **************************************
 var mySwiper = new Swiper('.swiper-container', {
 	pagination: {

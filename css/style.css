@@ -221,7 +221,14 @@ div {
 .nav-mob {
 	display: none;
 }
-
+.nav {
+	top: 162px; /*distance from the menu to the top of the screen*/
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
 nav ul {
 	margin: 0;
 	padding: 0;
@@ -766,8 +773,6 @@ nav li:hover > .submenu {
 .list {
 	color: var(--primary);
 }
-.title-box {
-}
 .title-box_block {
 	display: flex;
 	align-items: center;
@@ -785,8 +790,6 @@ nav li:hover > .submenu {
 	line-height: 42px;
 	padding: 0;
 	margin: 0;
-}
-.h1-title {
 }
 .h2-title {
 	font-family: "HelveticaNeueCyr";
@@ -1044,8 +1047,6 @@ nav li:hover > .submenu {
 	display: inline-block;
 	padding-bottom: 30px;
 	border-bottom: 3px solid var(--accent);
-}
-.item-description {
 }
 .item-cost_blocks {
 	height: 130px;
