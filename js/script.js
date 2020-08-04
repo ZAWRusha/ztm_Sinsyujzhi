@@ -70,6 +70,7 @@ $(document).ready(function () {
 		$('.modal-call').fadeOut()
 		$('.modal-sended').fadeOut()
 		$('.burger_b-modal').fadeOut()
+		$('.light-box-main').fadeOut()
 	})
 
 	//listen 'item' modal and open on click
@@ -98,6 +99,12 @@ $(document).ready(function () {
 		event.preventDefault()
 		$('.burger_b-bg').fadeIn()
 		$('.burger_b-modal').fadeIn()
+	})
+
+	//listen 'light-box' modal and open on click
+	$('.newsdetail-img').click(function (event) {
+		event.preventDefault()
+		$('.light-box-main').fadeIn()
 	})
 
 	// modal-image (magnific-popup) **************************************

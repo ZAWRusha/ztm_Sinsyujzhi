@@ -403,6 +403,10 @@
 		right: 17px;
 		z-index: 1;
 	}
+	.light-box-slider-btn {
+		right: 0;
+		bottom: 450px;
+	}
 	.catalog-blok__top {
 		flex-wrap: wrap;
 	}

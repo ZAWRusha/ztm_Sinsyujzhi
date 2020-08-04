@@ -400,7 +400,7 @@ nav li:hover > .submenu {
 	margin: 0 auto;
 	position: relative;
 	bottom: 117px;
-	z-index: 1;
+	/* z-index: 1; */
 }
 .newsdetail-slider-container {
 	height: 300px;
@@ -420,6 +420,7 @@ nav li:hover > .submenu {
 	background-color: #fff;
 	color: #a2a2a2;
 	float: left;
+	z-index: 1;
 }
 .slider-button-prev {
 	transform: scaleX(-1);
@@ -1491,4 +1492,78 @@ input[type="checkbox"]:checked + label:before {
 }
 .modal-button {
 	margin: 0;
+}
+/***************** light-box ****************/
+.light-box {
+	z-index: 15;
+}
+.light-box-main {
+	display: none;
+	/* display: flex; */
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: url("../img/bgi.jpg") no-repeat;
+	background-size: cover;
+}
+.light-box__bg {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.light-box-container {
+	height: 800px;
+}
+.light-box-section {
+	height: 800px;
+}
+.light-box-slider {
+	height: 800px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.light-box-img-box {
+	width: 100%;
+}
+.light-box-img {
+	display: flex;
+	align-items: flex-end;
+	/* width: 800px; */
+}
+.light-box-description {
+	display: flex;
+	position: relative;
+	align-items: center;
+	bottom: 40px;
+	height: 40px;
+	width: 100%;
+	background-color: var(--secondary);
+	color: #fff;
+	font-family: "HelveticaNeueCyr-Roman";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 0 20px;
+}
+.light-box-slider-btn {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.light-box-slider-btn {
+	bottom: 430px;
+	justify-content: space-between;
+}
+.light-box-close {
+	top: 30px;
+	right: 30px;
+	color: #000;
+}
+.light-box-close > a {
+	color: #000;
 }
