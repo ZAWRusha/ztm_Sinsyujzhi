@@ -85,9 +85,9 @@ textarea:focus::placeholder {
 div {
 	outline: none;
 }
-.main {
+/* .main {
 	overflow: hidden;
-}
+} */
 .header {
 	padding: 40px 0;
 	border-bottom: 2px solid #eaeaea;
@@ -178,7 +178,6 @@ div {
 	transition: 0.3s;
 	cursor: pointer;
 }
-
 .accent-button {
 	border-radius: none;
 	color: var(--primary);
@@ -215,12 +214,15 @@ div {
 	width: 20px;
 	margin-right: 10px;
 }
-
-/***************************** nav ****************************** */
-
-.nav-mob {
+.nav-mob,
+.menu-burger_b,
+.burger_b-modal {
 	display: none;
 }
+.menu-burger_b {
+	margin-right: 10px;
+}
+/***************************** nav ****************************** */
 .nav {
 	top: 162px; /*distance from the menu to the top of the screen*/
 	position: fixed;
@@ -327,6 +329,7 @@ nav li:hover > .submenu {
 .section-slider-container {
 	height: 643px;
 	overflow: hidden;
+	margin-top: 60px;
 }
 
 .section-slider {
@@ -991,6 +994,7 @@ nav li:hover > .submenu {
 	background-size: cover;
 	height: 120px;
 	margin-bottom: 50px;
+	margin-top: 61px;
 }
 .separator-block {
 	font-family: "HelveticaNeueCyr";
@@ -1335,13 +1339,34 @@ nav li:hover > .submenu {
 	z-index: 15;
 	color: #15151c;
 }
+
 .modal-close {
-	background: url(../img/modal-close.svg) no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: -20px;
+	right: -20px;
 	height: 15px;
 	width: 74px;
-	position: absolute;
-	top: -23px;
-	right: -20px;
+	z-index: 16;
+	font-family: "HelveticaNeueCyr";
+	cursor: pointer;
+	color: #fff;
+}
+.modal-close > a {
+	font-family: "HelveticaNeueCyr-Roman";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	text-decoration: underline;
+	color: #fff;
+}
+.modal-close > span {
+	font-size: 36px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-left: 10px;
 }
 .modal-content {
 	padding: 30px 35px 40px;

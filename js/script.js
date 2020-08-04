@@ -62,12 +62,14 @@ $(document).ready(function () {
 	// modal (popup) **************************************
 
 	//closed all modals
-	$('.modal-bg, .modal-close').click(function (event) {
+	$('.modal-bg, .modal-close, .burger_b-close, .burger_b-bg').click(function (event) {
 		event.preventDefault()
 		$('.modal-bg').fadeOut()
+		$('.burger_b-bg').fadeOut()
 		$('.modal-item').fadeOut()
 		$('.modal-call').fadeOut()
 		$('.modal-sended').fadeOut()
+		$('.burger_b-modal').fadeOut()
 	})
 
 	//listen 'item' modal and open on click
@@ -91,6 +93,12 @@ $(document).ready(function () {
 		$('.modal-sended').fadeIn()
 	})
 
+	//listen 'menu-burger_b' modal and open on click
+	$('.menu-burger_b').click(function (event) {
+		event.preventDefault()
+		$('.burger_b-bg').fadeIn()
+		$('.burger_b-modal').fadeIn()
+	})
 
 	// modal-image (magnific-popup) **************************************
 	$('.image-link').magnificPopup({ type: 'image' });

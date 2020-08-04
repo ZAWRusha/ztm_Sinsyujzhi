@@ -88,18 +88,14 @@
 		margin-right: 0;
 	}
 	.section-slider-container {
-		height: 540px;
+		margin-top: 55px;
 	}
-	.section-slider {
-		height: 540px;
-	}
-	.promo-title {
-		margin-top: 110px;
+	.section-separator {
+		margin-top: 56px;
 	}
 	.catalog {
 		margin-top: 30px;
 	}
-
 	.catalog-blok__top {
 		margin-top: 30px;
 	}
@@ -199,7 +195,8 @@
 		justify-content: center;
 	}
 	.mail,
-	.search {
+	.search,
+	.nav-pc {
 		display: none;
 	}
 	.feedback {
@@ -209,11 +206,122 @@
 	.nav-container {
 		justify-content: center;
 	}
-	.nav-pc {
-		display: none;
-	}
-	.nav-mob {
+	.nav-mob,
+	.menu-burger_b,
+	.mail-burger_b,
+	.search-burger_b {
 		display: block;
+	}
+	/***************** burger_b-modal (nav)******************/
+	.burger_b-bg {
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		z-index: 12;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	.burger_b-modal {
+		position: fixed;
+		top: 0px;
+		left: 0;
+		max-width: 460px;
+		border: 1px solid #dedede;
+		background-color: #f5f5f5;
+		z-index: 15;
+	}
+	.burger_b-close {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: absolute;
+		top: 12px;
+		right: -20px;
+		height: 15px;
+		width: 74px;
+		z-index: 16;
+		font-family: "HelveticaNeueCyr";
+		cursor: pointer;
+		color: #262626;
+	}
+	.burger_b-close > a {
+		font-family: "HelveticaNeueCyr-Roman";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 30px;
+		text-decoration: underline;
+		color: #262626;
+	}
+	.burger_b-close > span {
+		font-size: 36px;
+		font-weight: 400;
+		text-decoration: none;
+		margin-left: 10px;
+	}
+	.burger_b-content {
+		padding: 25px 40px 15px;
+	}
+	.nav-burger_b {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	.nav-burger_b > li {
+		font-family: "HelveticaNeueCyr";
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 22px;
+		letter-spacing: -1px;
+		border-bottom: 1px solid #9c9c9c;
+		padding: 10px 0;
+	}
+	.nav-burger_b > li > a:hover {
+		color: var(--secondary);
+	}
+	.mail-burger_b {
+		margin: 0;
+	}
+	.mail-burger_b > i {
+		font-size: 18px;
+	}
+	.mail-burger_b > a {
+		font-family: "HelveticaNeueCyr-Roman";
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.9px;
+		color: var(--primary);
+	}
+	.search-burger_b {
+		border-radius: 6px;
+		border: 1px solid #b7b7b7;
+		background-color: #ffffff;
+		width: 277px;
+		margin: 0;
+	}
+	.input-burger_b {
+		width: 240px;
+		height: 40px;
+		padding-right: 0;
+	}
+	.submit-burger_b {
+		display: inline-block;
+		position: relative;
+		height: 20px;
+		width: 20px;
+		top: 5px;
+	}
+	.nav-burger_b > li:nth-last-child(-1n + 2) {
+		border: none;
+		padding: 0;
+		margin: 12px 0;
+	}
+	.nav-burger_b > li:last-child {
+		margin-bottom: 0px;
+	}
+	.logo-img {
+		margin-right: 40px;
 	}
 	.topmenu > li:nth-last-child(-1n + 5) {
 		display: none;
@@ -239,6 +347,7 @@
 	}
 	.section-slider-container {
 		height: 643px;
+		margin-top: 36px;
 	}
 	.section-slider {
 		height: 643px;
@@ -336,8 +445,8 @@
 	.footer {
 		margin-top: 40px;
 	}
-	/*** footer ***/
 
+	/*** footer ***/
 	.footer-blocks {
 		margin: 10px 0 30px 0;
 		flex-wrap: wrap;
@@ -348,14 +457,12 @@
 		margin: 0;
 		padding: 0;
 		margin-bottom: 25px;
-		/* border: 1px solid red; */
 	}
 	.footer-block:first-child {
 		display: flex;
 		width: 100%;
 		flex-basis: 100%;
 		justify-content: center;
-		/* border: 1px solid; */
 	}
 	.footer-block:nth-child(2) {
 		display: flex;
@@ -372,7 +479,6 @@
 	.footer-logo {
 		order: 1;
 		display: none;
-		/* border: 1px solid; */
 	}
 	.footer-logo__mob {
 		display: block;
@@ -401,7 +507,6 @@
 		font-size: 14px;
 		display: flex;
 		align-items: center;
-		/* border: 1px solid; */
 	}
 	.footer-phone {
 		font-size: 14px;
@@ -428,7 +533,7 @@
 		font-weight: 500;
 	}
 	.section-separator {
-		margin-bottom: 40px;
+		margin-top: 36px;
 	}
 	.news-years {
 		margin-bottom: 30px;
@@ -507,7 +612,6 @@
 		grid-template-columns: 70px 85px auto auto auto;
 		grid-template-rows: repeat(6, auto);
 		grid-auto-flow: column;
-		/* border: 1px solid #d0d0d0; */
 		gap: 3px 0px;
 	}
 	.item-table {
