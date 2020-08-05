@@ -335,18 +335,19 @@ nav li:hover > .submenu {
 .section-slider {
 	height: 643px;
 	background: url(../img/bg-slider.jpg) no-repeat;
-	/* background-size: cover; */
-	background-position: top -250px center;
+	background-size: cover;
+	background-position: center;
 	color: #ffffff;
 	overflow: hidden;
 }
 .promo-title {
-	width: 100%;
+	max-width: 850px;
 	font-family: "HelveticaNeueCyr";
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 52px;
 	margin-top: 190px;
+	text-shadow: 0 0 10px #000;
 }
 .promo-text {
 	max-width: 660px;
@@ -400,7 +401,6 @@ nav li:hover > .submenu {
 	margin: 0 auto;
 	position: relative;
 	bottom: 117px;
-	/* z-index: 1; */
 }
 .newsdetail-slider-container {
 	height: 300px;
@@ -433,7 +433,7 @@ nav li:hover > .submenu {
 
 /****************** catalog *****************/
 .catalog {
-	margin-top: 40px;
+	margin: 40px 0;
 }
 .catalog-blocks {
 	width: 100%;
@@ -1499,7 +1499,6 @@ input[type="checkbox"]:checked + label:before {
 }
 .light-box-main {
 	display: none;
-	/* display: flex; */
 	align-items: center;
 	height: 100vh;
 	width: 100%;
@@ -1532,7 +1531,6 @@ input[type="checkbox"]:checked + label:before {
 .light-box-img {
 	display: flex;
 	align-items: flex-end;
-	/* width: 800px; */
 }
 .light-box-description {
 	display: flex;

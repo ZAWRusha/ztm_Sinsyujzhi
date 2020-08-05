@@ -42,6 +42,25 @@ var mySwiper = new Swiper('.swiper-container', {
 		loop: 'true'
 	},
 });
+// slider light box **************************************
+var mySwiperLB = new Swiper('.swiper-containerLB', {
+	pagination: {
+		el: '.slider-pagination',
+		bulletClass: 'slider-bullet',
+		bulletActiveClass: 'slider-bullet__active',
+		clickable: 'true'
+	},
+
+	navigation: {
+		nextEl: '.slider-button-next',
+		prevEl: '.slider-button-prev',
+	},
+
+	autoplay: {
+		delay: 5000,
+		loop: 'true'
+	},
+});
 
 // button scrollUp **************************************
 $(document).ready(function () {
@@ -71,6 +90,8 @@ $(document).ready(function () {
 		$('.modal-sended').fadeOut()
 		$('.burger_b-modal').fadeOut()
 		$('.light-box-main').fadeOut()
+		$('.wrapper-news-detail').fadeIn()
+		mySwiper.update()
 	})
 
 	//listen 'item' modal and open on click
@@ -102,9 +123,12 @@ $(document).ready(function () {
 	})
 
 	//listen 'light-box' modal and open on click
-	$('.newsdetail-img').click(function (event) {
+	$('.newsdetail-img').click(function () {
 		event.preventDefault()
+		$('.wrapper-news-detail').fadeOut()
 		$('.light-box-main').fadeIn()
+		$('.light-box-main').css('display', 'flex')
+		mySwiperLB.update()
 	})
 
 	// modal-image (magnific-popup) **************************************
