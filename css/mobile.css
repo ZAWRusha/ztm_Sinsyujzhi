@@ -159,7 +159,7 @@
 		flex-basis: 50%;
 		order: 2;
 		margin-top: 0;
-		padding-left: 95px;
+		padding-left: 35px;
 	}
 	.footer-mail {
 		margin: 0;
@@ -487,6 +487,10 @@
 		margin: 0;
 		padding-left: 0;
 	}
+	.footer-address > span {
+		white-space: initial;
+	}
+
 	.footer-address > span,
 	.footer-mail > a,
 	.footer-phone > a > span {
