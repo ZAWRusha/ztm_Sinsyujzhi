@@ -711,7 +711,40 @@ nav li:hover > .submenu {
 	padding: 5px 5px;
 	margin: 0 -380px;
 }
+/************************* magnific LightBox *********************/
+.mfp-bg {
+	background: linear-gradient(#000 #000) url("../img/bgi.jpg") no-repeat center;
+	background-size: cover;
+	opacity: 0.6;
+}
+.mfp-figure {
+	height: 100%;
+	width: 100%;
+	max-width: 800px;
+}
+.mfp-gallery,
+.mfp-image-holder {
+	margin: 20 0px;
+}
+.mfp-bottom-bar {
+	margin-top: -40px;
+}
+.mfp-title {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding: 20px;
+	background-color: var(--secondary);
+	font-family: "HelveticaNeueCyr";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+	letter-spacing: 0.84px;
+	color: #fff;
+	overflow: hidden;
+}
 
+/*********************************************************/
 .gallery-pages {
 	margin-bottom: 0;
 }
@@ -1059,7 +1092,6 @@ nav li:hover > .submenu {
 }
 .item-cost_blok {
 	display: inline-block;
-	/* float: left; */
 }
 .item-cost {
 	font-family: "HelveticaNeueCyr";
@@ -1489,76 +1521,4 @@ input[type="checkbox"]:checked + label:before {
 }
 .modal-button {
 	margin: 0;
-}
-/***************** light-box ****************/
-.light-box {
-	z-index: 15;
-}
-.light-box-main {
-	display: none;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	background: url("../img/bgi.jpg") no-repeat;
-	background-size: cover;
-}
-.light-box__bg {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-.light-box-container {
-	height: 800px;
-}
-.light-box-section {
-	height: 800px;
-}
-.light-box-slider {
-	height: 800px;
-	max-width: 800px;
-	margin: 0 auto;
-}
-.light-box-img-box {
-	width: 100%;
-}
-.light-box-img {
-	display: flex;
-	align-items: flex-end;
-}
-.light-box-description {
-	display: flex;
-	position: relative;
-	align-items: center;
-	bottom: 40px;
-	height: 40px;
-	width: 100%;
-	background-color: var(--secondary);
-	color: #fff;
-	font-family: "HelveticaNeueCyr-Roman";
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	padding: 0 20px;
-}
-.light-box-slider-btn {
-	display: flex;
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-}
-.light-box-slider-btn {
-	bottom: 430px;
-	justify-content: space-between;
-}
-.light-box-close {
-	top: 30px;
-	right: 30px;
-	color: #000;
-}
-.light-box-close > a {
-	color: #000;
 }
